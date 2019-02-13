@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:times="http://user.net/time-service">
+
+    <soapenv:Header />
+    <soapenv:Body>
+        <times:getTimeRequest>
+            <times:format>2019-02-11</times:format>
+        </times:getTimeRequest>
+    </soapenv:Body>
+
+</soapenv:Envelope>

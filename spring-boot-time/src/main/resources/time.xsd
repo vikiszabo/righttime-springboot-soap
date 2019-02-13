@@ -1,0 +1,29 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://user.net/time-service"
+           targetNamespace="http://user.net/time-service" elementFormDefault="qualified">
+
+    <xs:element name="getTimeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="format" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getTimeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="time" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="formattedTime">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="formattedtime" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>
